@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:context=".HomeActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello,">
+            </TextView>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Miftah Sabirah"
+                android:textStyle="bold"
+                android:layout_below="@id/hello">
+            </TextView>
+
+            <TextView
+                android:id="@+id/topMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Movie"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/username"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/topMovie"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/movieCard1"
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/film1"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/film1" />
+
+                        <TextView
+                            android:id="@+id/judulfilm1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BRAVE"
+                            android:layout_below="@id/film1"
+                            android:layout_centerInParent="true">
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/f1bintang1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm1"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f1bintang2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm1"
+                            android:layout_toEndOf="@id/f1bintang1"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f1bintang3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm1"
+                            android:layout_toEndOf="@id/f1bintang2"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f1bintang4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm1"
+                            android:layout_toEndOf="@id/f1bintang3"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f1bintang5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_outline_24"
+                            android:layout_below="@id/judulfilm1"
+                            android:layout_toEndOf="@id/f1bintang4"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/movieCard2"
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/film2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/film2" />
+
+                        <TextView
+                            android:id="@+id/judulfilm2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ENCANTO"
+                            android:layout_below="@id/film2"
+                            android:layout_centerInParent="true">
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/f2bintang1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm2"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f2bintang2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm2"
+                            android:layout_toEndOf="@id/f2bintang1"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f2bintang3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm2"
+                            android:layout_toEndOf="@id/f2bintang2"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f2bintang4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_half_24"
+                            android:layout_below="@id/judulfilm2"
+                            android:layout_toEndOf="@id/f2bintang3"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f2bintang5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_outline_24"
+                            android:layout_below="@id/judulfilm2"
+                            android:layout_toEndOf="@id/f2bintang4"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/movieCard3"
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/film3"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/film3" />
+
+                        <TextView
+                            android:id="@+id/judulfilm3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TURNING RED"
+                            android:layout_below="@id/film3"
+                            android:layout_centerInParent="true">
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/f3bintang1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm3"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f3bintang2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm3"
+                            android:layout_toEndOf="@id/f3bintang1"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f3bintang3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm3"
+                            android:layout_toEndOf="@id/f3bintang2"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f3bintang4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm3"
+                            android:layout_toEndOf="@id/f3bintang3"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f3bintang5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_half_24"
+                            android:layout_below="@id/judulfilm3"
+                            android:layout_toEndOf="@id/f3bintang4"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/film4"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/film4" />
+
+                        <TextView
+                            android:id="@+id/judulfilm4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FROZEN"
+                            android:layout_below="@id/film4"
+                            android:layout_centerInParent="true">
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/f4bintang1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm4"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f4bintang2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm4"
+                            android:layout_toEndOf="@id/f4bintang1"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f4bintang3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm4"
+                            android:layout_toEndOf="@id/f4bintang2"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f4bintang4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm4"
+                            android:layout_toEndOf="@id/f4bintang3"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f4bintang5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_outline_24"
+                            android:layout_below="@id/judulfilm4"
+                            android:layout_toEndOf="@id/f4bintang4"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/film5"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/film5" />
+
+                        <TextView
+                            android:id="@+id/judulfilm5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TANGLED"
+                            android:layout_below="@id/film5"
+                            android:layout_centerInParent="true">
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/f5bintang1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm5"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f5bintang2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm5"
+                            android:layout_toEndOf="@id/f5bintang1"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f5bintang3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm5"
+                            android:layout_toEndOf="@id/f5bintang2"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f5bintang4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_outline_24"
+                            android:layout_below="@id/judulfilm5"
+                            android:layout_toEndOf="@id/f5bintang3"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f5bintang5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_outline_24"
+                            android:layout_below="@id/judulfilm5"
+                            android:layout_toEndOf="@id/f5bintang4"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/film6"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/film6" />
+
+                        <TextView
+                            android:id="@+id/judulfilm6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WAKANDA FOREVER"
+                            android:layout_below="@id/film6"
+                            android:layout_centerInParent="true">
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/f6bintang1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm6"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f6bintang2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm6"
+                            android:layout_toEndOf="@id/f6bintang1"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f6bintang3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_24"
+                            android:layout_below="@id/judulfilm6"
+                            android:layout_toEndOf="@id/f6bintang2"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f6bintang4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_half_24"
+                            android:layout_below="@id/judulfilm6"
+                            android:layout_toEndOf="@id/f6bintang3"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/f6bintang5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_star_outline_24"
+                            android:layout_below="@id/judulfilm6"
+                            android:layout_toEndOf="@id/f6bintang4"
+                            android:layout_marginBottom="10dp">
+                        </ImageView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_marginTop="180dp">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/UnameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:paddingStart="40dp"
+        android:padding="13dp"
+        android:background="@drawable/bg"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="40dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/PasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:paddingStart="40dp"
+        android:padding="13dp"
+        android:background="@drawable/bg"
+        android:layout_below="@+id/UnameLogin"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordLogin"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="LOGIN"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:backgroundTint="#777777">
+    </Button>
+
+
+</RelativeLayout>
